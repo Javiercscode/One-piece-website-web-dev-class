@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+h1,h2,h3{
+    line-height: 1.1;
+    text-align: center;
+}
+.container{
+    background-color: grey;
+    display:grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "sidebar"
+    "footer";
+    /* by setting header header header , your seting up a 3x3 grid in a sense
+     header header header / would fill the first row 
+     then if you did header nav sidebar, header would be the first in the 2nd row then nav then sidebar
+     lastly if you did sidebar, header, nav it would fill up the spaces accordingly
+
+     VIEW ROW FORMAT IN @media example :D
+    /*gap: 1.5rem; */
+    max-inline-size: 1000px;
+    margin-inline: auto;
+}
+
+/* @media = media query */
+/* If viewport >= 600px, then ... */
+@media(min-width:600px){
+    .container{
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: 
+        "header header header" /* Row 1 */
+        "nav main sidebar"     /* Row 2 */
+        "footer footer footer"; /* Row 3 */
+    }
+
+}
+header {
+    background-color: mistyrose;
+    border: thick solid red;
+    grid-area: header;
+}
+
+nav {
+    background-color: peachpuff;
+    border: thick solid orange;
+    grid-area: nav;
+}
+
+main {
+    background-color: lemonchiffon;
+    border: thick solid gold;
+    grid-area: main;
+    padding-inline: 1.5rem;
+}
+
+aside {
+    background-color: lightgreen;
+    border: thick solid green;
+    grid-area: sidebar;
+    padding-inline: 1.5rem;
+}
+
+footer {
+    background-color: lightskyblue;
+    border: thick solid blue;
+    grid-column: span 3;
+    grid-area:footer;
+}

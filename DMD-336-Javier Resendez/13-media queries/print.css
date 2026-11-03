@@ -1,0 +1,10 @@
+body{
+    background-color: transparent;
+    color: black;
+}
+
+.wrapper{
+    background-color: transparent;
+    border-color: black;
+    max-inline-size: 60ch;
+}

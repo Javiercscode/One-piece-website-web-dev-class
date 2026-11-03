@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Flexbox</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper"> 
+            <h1>Flexbox</h1>
+            <h2>Default Values</h2>
+            <div class="container flex-container" >
+                <div class="item">Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+                <div class="item">Item Four</div>
+                <div class="item">Item Five</div>
+                <div class="item">Item Six</div>
+            </div>
+            <h2>Flex-Direction</h2>
+            <h3>Row</h3>
+            <div class="container flex-container" style="flex-direction: row;">
+                <div class="item">Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+            </div>
+            <h3>Column</h3>
+            <div class="container flex-container" style="flex-direction: column;">
+                <div class="item">Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+            </div>
+            <h2>Flex-Wrap</h2>
+            <h3>No Wrap</h3>
+            <div class="container flex-container" style="flex-wrap: nowrap">
+                <div class="item">Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+                <div class="item">Item Four</div>
+                <div class="item">Item Five Longer</div>
+                <div class="item">Item Six</div>
+            </div>
+            <h3>Wrap</h3>
+            <div class="container flex-container" style="flex-wrap: wrap;">
+                <div class="item">Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+                <div class="item">Item Four</div>
+                <div class="item">Item Five Longer</div>
+                <div class="item">Item Six</div>
+            </div>
+            <h2>Justify-Content</h2>
+            <h3>flex-start</h3>
+            <div class="container flex-container3" style="justify-content: flex-start;">
+                <div class="item">Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+                <div class="item">Item Four</div>
+            </div>
+            <h3>flex-end</h3>
+            <div class="container flex-container3" style="justify-content: flex-end;">
+                <div class="item">Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+                <div class="item">Item Four</div>
+            </div>
+            <h3>center</h3>
+            <div class="container flex-container3" style="justify-content: center;">
+                <div class="item">Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+                <div class="item">Item Four</div>
+            </div>
+            <h3>space-between</h3>
+            <div class="container flex-container3" style="justify-content: space-between;">
+                <div class="item">Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+                <div class="item">Item Four</div>
+            </div>
+            <h3>space-around</h3>
+            <div class="container flex-container3" style="justify-content: space-around;">
+                <div class="item">Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+                <div class="item">Item Four</div>
+            </div>
+            <h2>Align-Items</h2>
+            <h3>stretch</h3>
+            <div class="container flex-container3 height" style="align-items: space-around;">
+                <div class="item">Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+                <div class="item">Item Four</div>
+            </div>
+            <h3>flex-start</h3>
+            <div class="container flex-container3 height" style="align-items: flex-start;">
+                <div class="item">Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+                <div class="item">Item Four</div>
+            </div>
+            <h3>flex-end</h3>
+            <div class="container flex-container3 height" style="align-items: flex-end;">
+                <div class="item">Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+                <div class="item">Item Four</div>
+            </div>
+            <h3>center</h3>
+            <div class="container flex-container3 height" style="align-items: center;">
+                <div class="item">Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+                <div class="item">Item Four</div>
+            </div>
+            <h3>baseline</h3>
+            <div class="container flex-container3 height" style="align-items: baseline;">
+                <div class="item">Item One</div>
+                <div class="item" style="font-size: 2em;">Item Two</div>
+                <div class="item" style="font-size: 3em;">Item Three</div>
+                <div class="item" style="font-size: .75em;">Item Four</div>
+            </div>
+            <h2>Align-Self</h2>
+            <div class="container flex-container3">
+                <div class="item">Item One</div>
+                <div class="item" id="item-two">Item Two</div>
+                <div class="item">Item Three</div>
+                <div class="item">Item Four</div>
+            </div>
+            <h2>Align-Content</h2>
+            <h3>flex-start</h3>
+            <div class="container flex-container4" style="align-content: flex-start;">
+                <div class="item">Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+                <div class="item">Item Four</div>
+                <div class="item">Item Five</div>
+                <div class="item">Item Six</div>
+                <div class="item">Item Seven</div>
+                <div class="item">Item Eight</div>
+                <div class="item">Item Nine</div>
+                <div class="item">Item Ten</div>
+            </div>
+            <h3>flex-end</h3>
+            <div class="container flex-container4" style="align-content: flex-end;">
+                <div class="item">Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+                <div class="item">Item Four</div>
+                <div class="item">Item Five</div>
+                <div class="item">Item Six</div>
+                <div class="item">Item Seven</div>
+                <div class="item">Item Eight</div>
+                <div class="item">Item Nine</div>
+                <div class="item">Item Ten</div>
+            </div>
+            <h3>center</h3>
+            <div class="container flex-container4" style="align-content: center;">
+                <div class="item">Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+                <div class="item">Item Four</div>
+                <div class="item">Item Five</div>
+                <div class="item">Item Six</div>
+                <div class="item">Item Seven</div>
+                <div class="item">Item Eight</div>
+                <div class="item">Item Nine</div>
+                <div class="item">Item Ten</div>
+            </div>
+            <h3>space-between</h3>
+            <div class="container flex-container4" style="align-content: space-between;">
+                <div class="item">Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+                <div class="item">Item Four</div>
+                <div class="item">Item Five</div>
+                <div class="item">Item Six</div>
+                <div class="item">Item Seven</div>
+                <div class="item">Item Eight</div>
+                <div class="item">Item Nine</div>
+                <div class="item">Item Ten</div>
+            </div>
+            <h3>space-around</h3>
+            <div class="container flex-container4" style="align-content: space-around;">
+                <div class="item">Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+                <div class="item">Item Four</div>
+                <div class="item">Item Five</div>
+                <div class="item">Item Six</div>
+                <div class="item">Item Seven</div>
+                <div class="item">Item Eight</div>
+                <div class="item">Item Nine</div>
+                <div class="item">Item Ten</div>
+            </div>
+            <h2>Order</h2>
+            <div class="container flex-container5">
+                <div class="item">Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+            </div>
+            <h2>Flex</h2>
+            <h3>flex-shrink</h3>
+            <div class="container flex-container-6">
+                <div class="item"> Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+                <div class="item">Item Four</div>
+                <div class="item">Item Five</div>
+                <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius incidunt error pariatur fugiat doloremque possimus molestiae tenetur ducimus autem nam fugit soluta, tempora mollitia sapiente harum quia voluptatem voluptas voluptates!
+
+            </div>
+            </div>
+            <h3>Flex-grow</h3>
+            <div class="container flex-container-7">
+                <div class="item"> Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three Hundred Thirty Three </div>
+            </div>
+            <h3>flex-basis</h3>
+            <div class="container flex-container-8">
+                <div class="item"> Item One</div>
+                <div class="item">Item Two</div>
+                <div class="item">Item Three</div>
+            </div>
+
+        </div>
+    </body>
+</html>

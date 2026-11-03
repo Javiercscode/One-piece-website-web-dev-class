@@ -1,0 +1,56 @@
+/* Logical Properties 
+
+1. Start(Left) ,Center, End(Right)
+
+*/
+
+html{
+
+    background-color: lemonchiffon;
+    font-family: Helvetica,Arial,sans-serif;
+
+    /* Generic font-family: serif,sans-serif,monospace,cursive,fantasy,system-uo */
+
+    /* line-height = leading */
+    line-height: 1.6;
+    /* Can specify a unit or leave unitless (recommended) */
+}
+
+h1 {
+
+    font-size: 3rem; /* 3rem x 16px = 32px */
+    /*  Base font size = typically 16px
+        rem = px / base font size
+        px = rem * base font size */
+
+
+}
+
+ /* h2{
+    color: rebeccapurple;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+} */
+/* Group Multiple selectods with commas */
+h1,h2,h3,h4,h5,h6{
+    color: rebeccapurple;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* Use quotation marks around typeface names with spaces,numbers, or other punctuations. */
+    line-height: 1.1;
+    text-align: center;
+    /*text-align = horizontal text alignment */
+    font-style: italic;
+    /* font-style = italic or not */
+    /* normal , italic, oblique(slanted) */
+    font-weight: normal;
+    /* font-weight = " Boldness" of text */
+    /* normal (400), bold (700), 100-900 */
+    /* Start, center, end */
+    /*values: start , center, end */
+    /* for left-to-right languages, start = left and right = right */
+    text-transform: uppercase;
+    /* text-tranforms sets capitaliation of your text */
+    /* normal, capitalize, uppercase, lowercase */
+
+    letter-spacing: 0.05em;
+}

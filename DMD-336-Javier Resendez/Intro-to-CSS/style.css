@@ -1,0 +1,52 @@
+/* Cascading StyleSheets*/
+
+/*
+selector{
+    property : value:
+}
+declaration = property; value;
+*/
+
+/* Elemement selector selects all element of the specified type */
+html{
+    /* background-color - background color */
+    background-color: aquamarine;
+    /* Color value : Keyword, RGB, Hexadecimal, HSL, and more! */
+}
+
+h1{
+    background-color: #ffc222;
+    /* color = (foreground) color */
+    color: rgb(59, 35, 96);
+}
+/* Element selector specificity : 0,0,1 */
+p {
+    color: red;
+    color: blue;
+    /* Later rules overwrite earleir ones */
+}
+/* "." indicates class selector */
+/* Class selector select all elements within a specific class
+*/
+
+/* ID VS Classes
+One "#"     Multiple"."
+*/
+
+/* Class selector specificity: 0,1,0 */
+.green-text {
+    color: forestgreen;
+}
+/* # Indicates ID Selector */
+/* ID Selector targets an element with the specified ID */
+/* Id Selector specificity: 1,0,0 */
+
+#unique{
+    background-color: lightsalmon;
+}
+.highlight{
+    background-color: yellow;
+    color: black;
+}
+
+/* Span & And Div = generic containers */

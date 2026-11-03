@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    border: thick dashed gainsboro;
+    padding: 1rem;
+}
+
+.flex-container {
+    display: flex;
+    gap: 1rem;
+     
+}
+
+.flex-container {
+    display: flex;
+    /* 
+    Flex-direction specifies direction of flex items:
+    row (default), row-reverse, column, column-reverse
+    */
+    flex-direction: row;
+    /*
+    Flex-wrap determines if flex. items wrap to a new line
+    nowrap (default), wrap, wrap-reverse
+    */
+    flex-wrap: wrap;
+    /*
+    Shorthand flex-flow: (flex-direction) (flex-wrap);
+    */
+    flex-flow: row wrap;
+
+    gap: 1rem;
+}
+
+/* @media (width < 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+} */
+
+.flex-container2 {
+    display: flex;
+    flex-direction: column;
+    /*
+    justify-content = space distribution along main axis
+    flex-start (default), flex-end, center, space-between, space-around
+    */
+    justify-content: space-between;
+    /*
+    align-items = space distribution along cross axis
+    stretch (default), flex-start, flex-end, center, baseline */
+    align-items: baseline;
+    gap: 1rem;
+    height: 400px;
+}
+
+.item {
+    background-color: gainsboro;
+    border: thick solid gray;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.flex-container3 {
+    display: flex;
+    /*
+    justify-content = space distribution along main axis
+    flex-start (default), flex-end, center, space-between, space-around
+    */
+    justify-content: flex-start;
+    /*
+    align-items = space distribution along cross axis
+    stretch (default), flex-start, flex-end, center, baseline */
+    /* align-items: stretch; */
+    gap: 1rem;
+    /* height: 400px; */
+}
+
+.height {
+    /* justify-content: flex-start; */
+    height: 400px;
+}
+
+/* :nth-child selects the nth child element */
+.flex-container3 > #item-two {
+    /* align-self overwrites the align-items property */
+    align-self: flex-end;
+}
+
+.flex-container4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items = space distribution along cross axis */
+    align-items: flex-start;
+    /* align-content = space distribution along cross axis for multi-line containers */
+    /* align-content: center; */
+
+    gap: 1rem;
+    height: 400px;
+}
+
+.flex-container5 {
+    display: flex;
+    gap: 1rem;
+}
+
+.flex-container5 > :nth-child(1) {
+    background-color: mistyrose;
+    border-color: crimson;
+    order: 1;
+    /* Default order value is 0. If two or more items share the same value, they will defer to the source order. */
+}
+
+.flex-container5 > :nth-child(2) {
+    background-color: lightgreen;
+    border-color: green;
+    order: 2;
+}
+
+.flex-container5 > :nth-child(3) {
+    background-color: lightblue;
+    border-color: navy;
+    order: 3;
+}
+.flex-container-6{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+/* Apply to .item children of .flex-container6 */
+.flex-container-6 > .item{
+    /* Flex-shrink set the shrink factor of a flex item.Item will srhink according to shrink factor when all flex items are larger than the wrapper */
+
+    flex-shrink: 0;
+}
+
+.flex-container-6 > item:nth-of-type(7){
+    flex-shrink: 1;
+}
+.flex-container-7{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.flex-container-7 > :nth-child(1) {
+    background-color: mistyrose;
+    border-color: crimson;
+    order: 1;
+    /* Default order value is 0. If two or more items share the same value, they will defer to the source order. */
+}
+
+.flex-container-7 > :nth-child(2) {
+    background-color: lightgreen;
+    border-color: green;
+    order: 2;
+}
+
+.flex-container-7 > :nth-child(3) {
+    background-color: lightblue;
+    border-color: navy;
+    order: 3;
+}
+.flex-container-7{
+    /* flex grows allows flex items t ogrow and fill the avaible space. The defaul value is 0(do not grow) and it accepts integers to set the grow factor . */
+
+    flex-grow: 1;
+}
+.flex-container-8{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.flex-container-8 > :nth-child(1) {
+    background-color: mistyrose;
+    border-color: crimson;
+    order: 1;
+    /* Default order value is 0. If two or more items share the same value, they will defer to the source order. */
+}
+
+.flex-container-8 > :nth-child(2) {
+    background-color: lightgreen;
+    border-color: green;
+    order: 2;
+}
+
+.flex-container-8 > :nth-child(3) {
+    background-color: lightblue;
+    border-color: navy;
+    order: 3;
+}
+.flex-container-8 > .item{
+    flex-grow: 1;
+    /* flex-basis is the side of the flex item before free space is distributed . */
+    flex-basis: 50%;
+}

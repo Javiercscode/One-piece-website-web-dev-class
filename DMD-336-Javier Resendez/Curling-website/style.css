@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+
+}
+/* pseudo- class selects element in a specifc state */
+/* Default, univisited link */
+a:link{
+    color:navy;
+    text-decoration: none; /* Removes all text decoration as name infers, even the underline */
+}
+/* A link thay has been visited */
+a:visited{
+    color: rebeccapurple;
+
+}
+/* when the user hovers their mouse over a link */
+a:hover{
+    color: crimson;
+    text-decoration: underline; /* add back the underline to the hyperlink that was removed from the above statement */
+
+}
+/* A link  that is active (e.g., being clicked) */
+a:active{
+    color: goldenrod;
+
+}
+h1,h2,h3{
+    line-height: 1.1;
+    text-align: center;
+    text-wrap: balance;
+}
+h1{
+    color: navy;
+    font-size: 6rem;
+}
+h2{
+    color: crimson;
+    font-size: 2rem;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    /* width = 100% (of parent container)
+    , max-width = 100%( of parent container, no larger than image size */
+    margin-inline: auto;
+}
+ /* p{
+    margin: 1rem;
+} */
+.wrapper{
+    /*border: thick dashed crimson; */
+    max-width: 1000px;
+    margin-inline: auto;
+    /* text-align: center; */
+
+}
+main{
+    padding-inline: 1rem;
+}
+
+figure{
+    background-color: gainsboro;
+    border: thin solid silver;
+    margin-inline: auto;
+    max-width: fit-content; /* Expand as wide as the inner content requires */ 
+    padding: 0.5rem;
+    text-wrap: balance;
+}
+figcaption{
+    padding-block-start:0.5rem;
+    text-align: center;
+}
+footer{
+    background-color: navy;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}

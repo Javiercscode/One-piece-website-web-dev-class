@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+h1,h2,h3{
+    line-height: 1.1;
+}
+.wrapper{
+    margin-inline: auto;
+    max-inline-size: 1000px;
+    padding-inline: 1rem;
+    margin-bottom: 100vh;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+/* nav{
+    background-color: papayawhip;
+} */
+header{
+    background-color: papayawhip;
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media(width < 600px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+nav ul{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    flex-wrap:wrap;
+
+    list-style: none;
+    padding-left: 0;
+    margin-block: 0;
+}
+
+/* nav li{
+    display: inline-block;
+    padding: 0.5rem;
+} */
+header a{
+    color: sienna;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+.brand{
+    /* margin-right: auto; */
+    flex-shrink: 0;
+    font-size: 1.2em;
+    margin-right: auto;
+}
+section{
+    background-color: #fcf4e0;
+    padding-block: 2rem;
+}
+/* Media Object */
+.media__content{
+    /* border: thick dashed red; */
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* flex-direction: row-reverse; */
+    margin-block-end: 0.75rem;
+    padding: 0.5rem;
+    align-items: center;
+    gap: 2rem;
+    flex-grow: 1;
+
+}
+.media:hover {
+    background-color:rgba(255, 255, 255, 0.6);;
+}
+.media__content p{
+    color: #1460aa;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin-block: 0;
+    text-wrap: balance;
+
+}
+.media__content img{
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1 / 1; /* Perfect Sqaure */
+    object-fit: cover; /* Crops the image to fir shape */
+    margin-inline: 2rem;
+    
+}

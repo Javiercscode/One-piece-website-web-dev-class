@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+h1,h2{
+    text-align: center; /* Center Inline Elements */
+}
+img{
+    display: block;
+    inline-size: 100%;
+}
+body{
+    /* Color Keywords, hexadecimal,rgb, hsl, lch .. */
+    background-color:honeydew
+}
+.container {
+    background-color: white;
+    border: thick dashed seagreen;
+    /* Center block level element */
+    max-inline-size: 1000px;
+    margin-inline: auto;
+}
+.background{
+    background-color: darkseagreen;
+    color: white;
+    padding: 3rem;
+
+}
+.background-image{
+    background-color: rebeccapurple;
+    background-image: url(../Images/bkgd.jpg);
+    background-position: center;
+    /* vertical = top , center, bottom
+    horizontal = left, center, right */
+    background-size: cover;
+    /*
+    auto(intrinsic height/width)
+    cover(fill, cropping may occur)
+    contain(fit, cropping will not occur )
+    */
+
+    background-repeat: no-repeat;
+}
+.background-pattern{
+    background-image: url(../Images/email-pattern.png);
+    color: grey;
+    background-repeat: repeat;
+
+    /* 
+    repeat = repeat the image (with copping)
+    no-repeat = does not repeat the image
+    space + repeats he imsage , divides extra space
+    round = repeats the imahge , manipulates to fit an even number
+    repeat-x = repeat no-repeat
+    repeat y = no-repeat repeat
+    */
+}

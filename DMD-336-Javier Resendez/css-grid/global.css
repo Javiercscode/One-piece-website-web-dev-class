@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+}
+
+p {
+    text-align: start;
+}
+
+.wrapper {
+    border: thick dashed crimson;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+    max-width: 900px;
+}
+
+.grid-container {
+    /* Set display property to grid */
+    display: grid;
+    /* grid-template-columns = how many and how wide are our columns? */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* can also use repeat(amt of rows, spacing ) instead of single handley putting each row and spacing in between 
+    /* grid-template-rows: 100px 150px; */
+    /* Accept any length value (e.g., pixels, ems, rems, %) */
+    /* fr = fraction of available space */
+    gap: 1.5rem;
+   
+}
+
+.grid-item {
+    background-color: lavender;
+    border: thick solid rebeccapurple;
+    padding: 1rem;
+     /* margin-block-end: 1.5rem; */
+}
+
+.grid-holy-grail {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+header {
+    background-color: mistyrose;
+    border: thick solid red;
+
+    /* grid-column-start: 1;
+    grid-column-end: 4;
+
+    is the same as...
+
+    grid-column: 1 / 4; */
+
+    grid-column: 1 / -1;
+}
+
+nav {
+    background-color: peachpuff;
+    border: thick solid orange;
+}
+
+main {
+    background-color: lemonchiffon;
+    border: thick solid gold;
+}
+
+aside {
+    background-color: lightgreen;
+    border: thick solid green;
+}
+
+footer {
+    background-color: lightskyblue;
+    border: thick solid blue;
+    grid-column: span 3;
+}

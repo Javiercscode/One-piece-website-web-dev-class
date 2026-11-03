@@ -1,0 +1,71 @@
+/* 1 Rem = 16 px
+R = Root */
+body{
+    background-color: lightgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+}
+h1{
+    font-size: 3rem;
+    line-height: 1.1;
+}
+p{
+    background-color: aqua;
+}
+ul{
+    background-color: lightgreen;
+}
+li{
+    background-color:green
+}
+.box {
+    background-color: paleturquoise;
+    /* Content */
+    max-width: 500px; 
+    height: auto; /*auto = take up as much space as needed */
+
+    /*Paddin */
+    padding: 1.5rem;
+    /* This the same as ...
+    padding-top : 1 rem;
+    padding-rightL 1 rem;
+    padding-bottom- 1rem;
+    padding-left: 1 rem;
+
+    */
+
+    padding: 1 rem 2rem 1rem 2rem; /* (top/bottom) ( left/ right) */
+
+    /* TrouBLe = Top Right Bottom Left (clockwise) */
+
+    /* Border */
+    border-width: 10px; /* px values, thin(1px), medium(3px), thick(5px) */
+    border-style: solid; /* dahed,dotted, double , groove, inset,outset,solid, ridge */
+    border-color: navy; /* color value */
+
+    /* this is the same as ....
+
+    border: 10px solid navy */
+
+    border-top-color: maroon;
+    border-right-color: goldenrod;
+    border-bottom-color: green;
+
+    /*Margin */
+
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 300px;
+
+    /* Center block-level elements by setting margin-right and margin-left to auto (You also need to set a widhty) */
+
+    /* margin: 0 auto; */
+    margin-inline: auto;
+    /*is the same as ....
+    margin-right: auto;
+    margin-left : auto; */
+
+}
+
+

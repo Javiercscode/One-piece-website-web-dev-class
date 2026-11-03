@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    line-height: 1.6;
+
+}
+h1,h2,h3{
+    line-height: 1,1;
+    text-align: center;
+}
+
+.wrapper{
+    margin-inline: auto;
+    max-inline-size: 1000px;
+    padding-inline: 1.5rem;
+}
+.container{
+    background-color: gainsboro;
+    border: 3px dashed gray;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+.box{
+    background-color: palegreen;
+    border: thick solid darkgreen;
+    color:darkgreen;
+    font-size: 1.25rem;
+    padding: 1rem;
+    text-align: center;
+}
+/* min-content will make a track as small possible without content over-flowing */
+.min-content{
+    grid-template-columns: repeat(3,min-content);
+}
+/* max-content will make a track wide enough for content to display in one line , Text will not wrap */
+.max-content{
+    grid-template-columns: repeat(3,max-content);
+}
+/* fit-content() works like max-content, however, it will wrap once you reach the speified size. */
+.fit-content{
+    grid-template-columns: repeat(3,fit-content(100px));
+}
+.sidebar{
+    grid-template-columns: 1fr fit-content(30ch);
+}
+.auto-fill{
+    grid-template-columns: repeat(auto-fill,200px);
+}
+.auto-fit{
+    grid-template-columns: repeat(auto-fit,200px);
+}
+/*minmax(min,max)= pick a size between mni and max */
+.auto-fill-min-max{
+    grid-template-columns: repeat(auto-fill,minmax(min(100%,200px),1fr));
+    /* min() with 100% prevents overflow in narrow spaces */
+}

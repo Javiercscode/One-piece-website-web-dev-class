@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: lavender;
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+.button{
+    background-color: lavender;
+    border: thick solid hsl(270, 70%, 20%);
+    color: lightblue;
+    font-weight: bold;
+    margin-block-end: 0.5rem;
+    padding: .25rem 1rem;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: rebeccapurple;
+    color: lavender;
+}
+@media(pointer:coarse){
+
+}
+.wrapper{
+    background-color: rebeccapurple;
+    border: thick solid hsl(270, 70%, 20%);
+    color: lavender;
+    margin-inline: auto;
+    max-inline-size: 1000px;
+    padding: 1.5rem;
+}
+/* If the viewport width is greater than or equal to 600px ....
+   width : 600px = if width is EXACTLY 600px
+   min-width:600px = greater than or equal to 600px
+   max-width:600px = less than or equal to 600px
+
+*/
+@media(min-width:600px){
+    body{
+        background-color: lightskyblue;
+    }
+    .wrapper{
+        background-color: blue;
+        border-color: navy;
+    }
+    .button{
+        background-color: blue;
+        border-color: lightskyblue;
+        padding: 0.5rem 1rem;
+    }
+    .button:hover{
+        background-color: lightskyblue;
+        color: purple;
+        padding: 0.5rem 1rem;
+    }
+
+}
+/* what happens at the breakpoint */
+@media (width<= 600px) {
+    body{
+        font-family: sans-serif;
+    }
+    .button{
+        background-color: purple;
+    }
+    
+}
+/* If viewport width > height .. */
+
+@media(orientation: landscape){
+    body{
+        background-color: mistyrose;
+    }
+
+}
+@media(prefers-color-scheme: dark){
+    body{
+        background-color: hsl(270, 70%, 20%);
+    }
+    .wrapper{
+        background-color: rebeccapurple;
+        border-color: hsl(270, 70%, 20);
+    }
+}
+/* If viewport height >= width .. */
+
+/* @media(orientation: portrait){
+    body{
+        background-color: lightgreen;
+    }
+} */
+
+/* @media() applies to everything
+@ media screen() only applies to screens
+@media print () only applies to print 
+
+*/
+
+
+/* Target media types */
+/* Was copied to print .css */
+/* @media print {
+    body{
+        background-color: transparent;
+        color: black;
+    }
+
+    .wrapper{
+        background-color: transparent;
+        border-color: black;
+        max-inline-size: 60ch;
+    }
+    
+} */
